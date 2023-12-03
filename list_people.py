@@ -1,5 +1,7 @@
 from datetime import datetime, timedelta
 from collections import defaultdict
+
+
 def get_birthdays_per_week(users):
     # Створюємо словник для зберігання імен іменинників за днями тижня
     birthdays_by_day = defaultdict(list)
@@ -37,7 +39,15 @@ def get_birthdays_per_week(users):
             day_of_week = 0  # Понеділок
 
         # Переводимо числове значення дня тижня у текстовий відповідно до календаря Python
-        day_name = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"][day_of_week]
+        day_name = [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+        ][day_of_week]
 
         # Додаємо ім'я іменинника до відповідного дня тижня
         birthdays_by_day[day_name].append(name)

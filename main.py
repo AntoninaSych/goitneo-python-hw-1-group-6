@@ -1,5 +1,6 @@
 from datetime import datetime
 import list_people
+import chat
 
 
 users = [
@@ -12,3 +13,4 @@ users = [
 
 
 list_people.get_birthdays_per_week(users)
+chat.main()
